@@ -45,34 +45,6 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="filter">
-            <div class= "filter-svg">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>filter-menu</title><path d="M11 11L16.76 3.62A1 1 0 0 0 16.59 2.22A1 1 0 0 0 16 2H2A1 1 0 0 0 1.38 2.22A1 1 0 0 0 1.21 3.62L7 11V16.87A1 1 0 0 0 7.29 17.7L9.29 19.7A1 1 0 0 0 10.7 19.7A1 1 0 0 0 11 18.87V11M13 16L18 21L23 16Z" />
-                </svg>
-            </div>
-            <form class="filter-form">
-                <div class="input-title">
-                    <p>Id</p>
-                    <div class="input-row">
-                        <input name="id" type="text" class="id-input active">
-                    </div>
-                </div>
-                <div class="input-title">
-                    <p>Name</p>
-                    <div class="input-row">
-                        <input name="name" type="text" class="name-input active">
-                    </div>
-                </div>
-                <div class="input-title">
-                    <p>Email</p>
-                    <div class="input-row">
-                        <input name="email" type="text" class="email-input active">
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
     <div class="data-management">
         <div class="client-column">
             @yield('table')

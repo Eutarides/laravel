@@ -1,85 +1,115 @@
 @extends('admin.layout.crud')
 
 @section('table')
-    <div class="table">
-        <div class="client-item">
-            <div class="client-item-images">
-                <div class="edit-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>pencil</title><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" />
-                    </svg>
+    <div class="client-column">
+        <div class="filter">
+            <div class= "filter-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>filter-menu</title><path d="M11 11L16.76 3.62A1 1 0 0 0 16.59 2.22A1 1 0 0 0 16 2H2A1 1 0 0 0 1.38 2.22A1 1 0 0 0 1.21 3.62L7 11V16.87A1 1 0 0 0 7.29 17.7L9.29 19.7A1 1 0 0 0 10.7 19.7A1 1 0 0 0 11 18.87V11M13 16L18 21L23 16Z" />
+                </svg>
+            </div>
+        </div>
+        <div class="table">
+            <div class="client-item">
+                <div class="client-item-images">
+                    <div class="edit-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>pencil</title><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" />
+                        </svg>
+                    </div>
+                    <div class="delete-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>delete</title><path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
+                        </svg>
+                    </div>
                 </div>
-                <div class="delete-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>delete</title><path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
-                    </svg>
+                <div class="client-item-data">
+                    <div class="data-row">
+                        <h3>Email:</h3>
+                        <h3>Nombre:</h3>
+                        <h3>Apellidos:</h3>
+                    </div>
                 </div>
             </div>
-            <div class="client-item-data">
-                <div class="data-row">
-                    <h3>Email:</h3>
-                    <h3>Nombre:</h3>
-                    <h3>Apellidos:</h3>
+            <div class="client-item">
+                <div class="client-item-images">
+                    <div class="edit-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>pencil</title><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" />
+                        </svg>
+                    </div>
+                    <div class="delete-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>delete</title><path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="client-item-data">
+                    <div class="data-row">
+                        <h3>Email:</h3>
+                        <h3>Nombre:</h3>
+                        <h3>Apellidos:</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="client-item">
+                <div class="client-item-images">
+                    <div class="edit-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>pencil</title><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" />
+                        </svg>
+                    </div>
+                    <div class="delete-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>delete</title><path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="client-item-data">
+                    <div class="data-row">
+                        <h3>Email:</h3>
+                        <h3>Nombre:</h3>
+                        <h3>Apellidos:</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="client-item">
+                <div class="client-item-images">
+                    <div class="edit-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>pencil</title><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" />
+                        </svg>
+                    </div>
+                    <div class="delete-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>delete</title><path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="client-item-data">
+                    <div class="data-row">
+                        <h3>Email:</h3>
+                        <h3>Nombre:</h3>
+                        <h3>Apellidos:</h3>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="client-item">
-            <div class="client-item-images">
-                <div class="edit-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>pencil</title><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" />
-                    </svg>
+        <div class="page-counter">
+            <div class="counter-info">
+                <div class="info-registers">
+                    <p>{{trans_choice('admin/pagination.total',  4, ['count' => 4])}}</p>
                 </div>
-                <div class="delete-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>delete</title><path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
-                    </svg>
+                <div class="info-page">
+                    <p>Página 1 de 1</p>
                 </div>
             </div>
-            <div class="client-item-data">
-                <div class="data-row">
-                    <h3>Email:</h3>
-                    <h3>Nombre:</h3>
-                    <h3>Apellidos:</h3>
+            <div class="page-counter-buttons">
+                <div class="counter-button first">
+                    <p>Primera</p>
                 </div>
-            </div>
-        </div>
-        <div class="client-item">
-            <div class="client-item-images">
-                <div class="edit-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>pencil</title><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" />
-                    </svg>
+                <div class="counter-button previous">
+                    <p>Anterior</p>
                 </div>
-                <div class="delete-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>delete</title><path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
-                    </svg>
+                <div class="counter-button next">
+                    <p>Siguiente</p>
                 </div>
-            </div>
-            <div class="client-item-data">
-                <div class="data-row">
-                    <h3>Email:</h3>
-                    <h3>Nombre:</h3>
-                    <h3>Apellidos:</h3>
+                <div class="counter-button last">
+                    <p>Última</p>
                 </div>
             </div>
         </div>
-        <div class="client-item">
-            <div class="client-item-images">
-                <div class="edit-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>pencil</title><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" />
-                    </svg>
-                </div>
-                <div class="delete-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>delete</title><path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
-                    </svg>
-                </div>
-            </div>
-            <div class="client-item-data">
-                <div class="data-row">
-                    <h3>Email:</h3>
-                    <h3>Nombre:</h3>
-                    <h3>Apellidos:</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="menu">
     </div>
 @endsection
 
