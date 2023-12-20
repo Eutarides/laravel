@@ -15,14 +15,13 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('address')->default("Evento online");
-            $table->varchar('description');
             $table->date('startDate');
             $table->date('endDate');
             $table->time('startTime');
             $table->time('endTime');
             $table->decimal('price',8,2)->default(0);
             $table->timestamps();
-            $table->softDelete();
+            $table->softDeletes();
         });
     }
 
