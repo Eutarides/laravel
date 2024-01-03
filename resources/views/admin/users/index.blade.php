@@ -114,7 +114,7 @@
 @endsection
 
 @section('form')
-    <form>
+    <form class="admin-form">
         <div class="image-menu">
             <div class="image-menu-title">
                 <div class="image-menu-title-principal active image-menu-button" data-value= "1">
